@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Rishi Rahul | Web Developer</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#home"><h1>Rishi Rahul</h1></a>
+      
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h4>Hello, I'm <span>Rishi Rahul</span></h4>
+        <h1>A Full Stack Developer</h1>
+        <p>I'm very passionate and dedicated to my work.</p>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+
+      <div class="home-img">
+        <img src="./images/home-right.png" alt="An image of a boy working in computer" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="about" id="about">
+      <div>
+        <h2>About Me</h2>
+        <p>
+          Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have
+          acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and
+          collaboration.
+        </p>
+        <a href="" target="_blank" class="btn">Resume</a>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">Skills</h2>
+      <p>Professional Skills & Tools</p>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy" class="icon icon-card" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy" class="icon icon-card" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" loading="lazy" class="icon icon-card" />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy" class="icon icon-card" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" loading="lazy" class="icon icon-card" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy" class="icon icon-card" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Projects</h2>
+      <p class="projects-subtitle">Here you can find some of the projects that I created recently</p>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img src="./images/form.jpg" alt="expense-tracker" loading="lazy" class="project-pic" />
+          <h3 class="project-title">Form Submission using DOM</h3>
+          <p class="project-details">
+            This is a webpage to submit the basic details of a user and can see the submitted details in the same page. The code is completely made using DOM.
+          </p>
+          <a href="https://taupe-lollipop-f58302.netlify.app/" target="_blank" class="project-link">See Live</a>
+          <a href="https://github.com/rishirahuln/GUVI-B39WD2Tamil-Day15-Task1" target="_blank" class="project-link">GitHub Repo</a>
+        </div>
+        <div class="project-container project-card">
+          <img src="./images/countries_data.jpg" alt="netflic-clone" loading="lazy" class="project-pic" />
+          <h3 class="project-title">Countries with Weather Data</h3>
+          <p class="project-details">
+            Here you can see the details of 250 countries and by just clicking a button, you can get the current weather data. It was made by fetching data from API.
+          </p>
+          <a href="https://musical-licorice-d316df.netlify.app/" target="_blank" class="project-link">See Live</a>
+          <a href="https://github.com/rishirahuln/GUVI-B39WD2Tamil-Day18Task" target="_blank" class="project-link">GitHub Repo</a>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Submit the form below so I can get back to you as soon as possible</p>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a class="socicon" href="https://www.linkedin.com/in/rishirahulnarayanan/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <a class="socicon" href="https://github.com/rishirahuln" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a class="socicon" href="mailto:nrishirahul@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="./images/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+  /></i>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">Copyright &copy;2022 All rights reserved</p>
+    </footer>
+
+    <!-- Website scripts -->
+
+    <script src="script.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
