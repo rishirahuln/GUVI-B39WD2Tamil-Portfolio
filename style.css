@@ -20,6 +20,7 @@
 	--secound-color: #a09dab;
 	--main-color: #f75023;
 	--h2-font: 3rem;
+    --h3-font: 2rem;
 	--p-font: 1.1rem;
 }
 html {
@@ -81,7 +82,7 @@ nav ul li {
     display: none;
 }
 .home{
-    padding: 100px 18%;
+    padding: 50px 10%;
 	min-height: 75vh;
 	height: 100%;
 	width: 100%;
@@ -91,9 +92,12 @@ nav ul li {
 	align-items: center;
 	grid-gap: 4rem;
 }
-.home-text h1{
+.home-text{
+    margin-bottom:100px;
+}
+.home-text h2{
 	margin: 10px 0px 25px;
-	font-size: 3rem;
+	font-size: 2.6rem;
 	line-height: 1;
 }
 span{
@@ -103,7 +107,7 @@ span{
 	font-size: 20px;
 }
 p{
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 28px;
 	margin-bottom: 20px;
 }
@@ -127,22 +131,20 @@ p{
 	height: auto;
 }
 .about{
-    margin: 80px 0px;
     text-align: center;
 	display: flex;
     justify-content: center;
 }
-.about h2{
-	font-size: var(--h2-font);
+.about h3{
+	font-size: var(--h3-font);
 	margin: 8px 0px 25px;
 	line-height: 1.1;
     color: var(--primary-color);
 }
 .about p{
     text-align: justify;
-	max-width: 550px;
-	font-size: 20px;
-	/* color: var(--secound-color); */
+    max-width: 40.75rem;
+	font-size: 18px;
 	line-height: 28px;
 	margin-bottom: 45px;
 }
@@ -150,25 +152,25 @@ p{
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
     
 }
 .skill-header {
-    margin-bottom: 2rem;
-    font-size: var(--h2-font);
+    margin-bottom: 0.5rem;
+    font-size: var(--h3-font);
 	line-height: 1.1;
     color: var(--primary-color);
 }
 .skills p{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 .skills-wrapper img {
     padding: 1.25rem;
 }
 .icon {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
 }
 .icon-card {
     background-color: #fff;
@@ -189,21 +191,17 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
 }
 .projects-title {
     text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 50px;
-    font-size: var(--h2-font);
-	margin: 8px 0px 25px;
+    margin-bottom: 0.5rem;
+    font-size: var(--h3-font);
 	line-height: 1.1;
     color: var(--primary-color);
 }
 .projects-subtitle{
     text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 30px;
+    margin-bottom: 2rem;
 }
 .project-container {
     text-align: center;
@@ -220,6 +218,7 @@ p{
 }
 .project-details {
     margin-bottom: var(--bottom-margin);
+    font-size: 17px;
 }
 .project-card {
     background-color: #fff;
@@ -236,30 +235,30 @@ p{
     border-bottom: 1px solid var(--secondary-color);
 }
 .contact {
-    margin-top: 200px;
+    margin-top: 100px;
 } 
-.contact h2 {
+.contact h3 {
     text-align: center;
-    font-size: var(--h2-font);
-	margin: 8px 0px 25px;
+    font-size: var(--h3-font);
+    margin-bottom: 0.5rem;
 	line-height: 1.1;
     color: var(--primary-color);
 } 
 .contact p{
     text-align: center;
-    margin-bottom: var(--bottom-margin-2);
-    margin-top: 50px;
+    margin-bottom: 2rem;
+    font-size: 18px;
 }
 .contact-form-container {
-    max-width: 40.75rem;
+    max-width: 35.75rem;
     margin: 0 auto;
     padding: 0.938rem;
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .contact-form-container label {
-    line-height: 2.7em;
+    line-height: 2em;
     font-weight: var(--bold-font);
     color: var(--primary-color);
 }
@@ -310,9 +309,11 @@ p{
 }
 footer {
     background-color: var(--bg-color);
-    padding: 1.25rem;
     text-align: center;
     margin: 2rem 0 0;
+}
+.copy{
+    font-size: 15px;
 }
 .scroll-up {
     position: fixed;
